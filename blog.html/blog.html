@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Insights Blog</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Custom CSS */
+        .navbar-brand img {
+            height: 40px;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5ac3f14f-2c9d-4125-8d76-df04e05cb1d0.png');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .blog-card {
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        .search-box {
+            max-width: 300px;
+        }
+        .category-badge {
+            cursor: pointer;
+        }
+        .text-muted a {
+            color: #6c757d;
+        }
+        .text-muted a:hover {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/80f4e686-8add-4f07-b8ff-88213cd7077f.png" alt="Tech Insights logo - modern tech company logo in blue gradient">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tech</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2 search-box" type="search" placeholder="Search articles...">
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Tech Insights Blog</h1>
+            <p class="lead mb-4">Discover the latest trends in technology, design, and business</p>
+            <a href="#latest-posts" class="btn btn-primary btn-lg">Explore Articles</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" id="latest-posts">
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <h2 class="fw-bold mb-3">Latest Articles</h2>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <div class="btn-group">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Sort by: Newest
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Newest</a></li>
+                        <li><a class="dropdown-item" href="#">Oldest</a></li>
+                        <li><a class="dropdown-item" href
